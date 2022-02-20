@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  @apply inline-block bg-black text-white py-3 px-5 rounded cursor-pointer active:scale-95 focus:outline-none  hover:opacity-90;
+}
+
+.reminder {
+  @apply border-l-2 border-gray-600;
+}
