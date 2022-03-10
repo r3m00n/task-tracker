@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 .btn {
-  @apply inline-block bg-black text-white py-3 px-5 rounded cursor-pointer active:scale-95 focus:outline-none  hover:opacity-90;
+  @apply inline-block px-5 py-3 text-white bg-black rounded cursor-pointer active:scale-95 focus:outline-none hover:opacity-90;
 }
 
 .reminder {
-  @apply border-l-2 border-gray-600;
+  @apply border-gray-600;
 }

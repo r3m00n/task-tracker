@@ -5,3 +5,6 @@
   (onDeleteTask)="deleteTask(task)"
   (onToggleReminder)="toggleReminder(task)"
 ></app-task-item>
+<p *ngIf="tasks.length == 0" class="mt-8 text-center">
+  Click on "Add" to add a Task.
+</p>

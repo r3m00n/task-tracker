@@ -5,11 +5,6 @@ import { Task } from '../../Task';
 @Component({
   selector: 'app-tasks',
   templateUrl: './tasks.component.html',
-  // TODO: wenn keine Tasks da sind (keine Tasks in der DB)
-  // sollte eine Meldung erscheinen dafür Template auslagern
-
-  // TODO: wenn Tasks da sind sagen dass man mit Doppelklick
-  // den Reminder togglen kann
 })
 export class TasksComponent {
   tasks: Task[] = [];
