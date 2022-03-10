@@ -4,9 +4,9 @@
   (dblclick)="onToggle(task)"
 >
   <div>
-    <h3 class="flex items-center justify-between font-semibold">
+    <p class="flex items-center justify-between font-semibold">
       {{ task.text }}
-    </h3>
+    </p>
     <p class="text-sm">{{ task.date }}</p>
   </div>
   <fa-icon [icon]="faTimes" (click)="onDelete(task)"></fa-icon>

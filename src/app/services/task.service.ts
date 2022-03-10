@@ -18,12 +18,12 @@ export class TaskService {
   constructor(private http: HttpClient) {}
 
   getTasks(): Observable<Task[]> {
+    // TODO: handle no-connection
     return this.http.get<Task[]>(this.apiUrl);
   }
 
   deleteTask(task: Task): Observable<Task> {
     return this.http.delete<Task>(`${this.apiUrl}/${task.id}`);
-    // TODO: handle no-connection
   }
 
   updateTaskReminder(task: Task): Observable<Task> {
